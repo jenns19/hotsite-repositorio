@@ -1,0 +1,157 @@
+﻿@model Interesse
+
+<div class="row">
+
+    <div class="col-md-6">
+
+        <h1>Iniciativa Saúde da Cidade</h1>
+        <p>
+            Texto sobre vida saudável: Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit.
+        </p>
+        <p>
+            Texto sobre vida iniciativa: Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit.
+        </p>
+    </div>
+
+    <div class="col-md-6">
+        <img src="/img/saude.jpg" width="400px">
+    </div>
+
+</div>
+
+<div class="row mt-3">
+
+    <div class="col-md-6 border border-dark" id="form">
+        <h2>Entre em contato!:</h2>
+        <p>Nos mande uma mensagem e fique por dentro de nossos eventos</p>
+
+        <form method="POST" id="formCadastro">
+
+            <div class="row">
+                <div class="col-md-3">
+                    <label asp-for="Nome">Nome:</label>
+                    </div>
+                    <div class="col-md-9">
+                    <input asp-for="Nome" id="nome"/>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <label asp-for="Email">Email:</label>
+                </div>
+                <div class="col-md-9">
+                    <input asp-for="Email" id="email" />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <label asp-for="Mensagem">Mensagem (opcional):</label> </div>
+                    <div class="col-md-9">
+                    <textarea asp-for="Mensagem" id="mensagem"></textarea>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <input type="submit" value="Enviar" id="btnEnvio" class="mb-3"/>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+    <div class="col-md-6">
+        <div class="row">
+        <div class="col-md-4">
+            <figure class="figure">
+                <img src="/img/agenda.png" class="figure-img img-fluid rounded" alt="Agenda de eventos" width="120">
+                <figcaption class="figure-caption text-center">
+                <a href="#" data-toggle="modal" data-target="#AgendaDeEventos">Agenda de evetos</a>
+                </figcaption>
+            </figure>
+
+        </div>
+
+        <div class="col-md-4">
+            <figure class="figure">
+                <img src="/img/dicas.png" class="figure-img img-fluid rounded" alt="Dicas de vida saudável" width="120">
+                <figcaption class="figure-caption text-center">
+                <a href="#" data-toggle="modal" data-target="#DicasDeSaude">Dicas de vida saudável</a>
+                </figcaption>
+            </figure>
+            
+        </div>
+
+        <div class="col-md-4">
+            <figure class="figure">
+                <img src="/img/apoio.png" class="figure-img img-fluid rounded" alt="Apoiadores" width="120">
+                <figcaption class="figure-caption text-center">
+                <a href="#" data-toggle="modal" data-target="#Apoiadores">Apoiadores</a>
+                </figcaption>
+            </figure>
+            
+        </div>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="modal fade" id="AgendaDeEventos" tabindex="-1" role="dialog" aria-labelledby="exampleAgendadeeventos" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleAgendadeeventos">Agenda de eventos</h5>
+      </div>
+      <div class="modal-body">
+        <p>conteudo</p>
+        <p>Evento I - 10/10 11:15</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <br>
+        <p>Evento II - 11/10 11:15</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <br>
+        <p>Evento II - 12/10 11:15</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="DicasDeSaude" tabindex="-1" role="dialog" aria-labelledby="exampleDicasdesaude" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleDicasdesaude">Dicas de vida saudável</h5>
+      </div>
+      <div class="modal-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <br>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="Apoiadores" tabindex="-1" role="dialog" aria-labelledby="exampleApoiadores" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleApoiadores">Apoiadores</h5>
+      </div>
+      <div class="modal-body">
+        <img src="/img/empresa.png" class="figure-img img-fluid rounded" alt="Dicas de vida saudável" width="120">
+        <h5>Empresa I</h5>
+        <p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></p>
+        <img src="/img/empresa.png" class="figure-img img-fluid rounded" alt="Dicas de vida saudável" width="120">
+        <h5>Empresa II</h5>
+        <p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></p>
+        <img src="/img/empresa.png" class="figure-img img-fluid rounded" alt="Dicas de vida saudável" width="120">
+        <h5>Empresa III</h5>
+        <p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></p>
+      </div>
+    </div>
+  </div>
+</div>
