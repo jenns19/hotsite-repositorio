@@ -6,7 +6,8 @@ namespace Hotsite.Models
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseMySql("Server=localhost;DataBase-Hotsite;Uid=root;Pwd=;");
+            optionsBuilder.UseMySql("Server=localhost;DataBase=Hotsite;Uid=root;Pwd=;");
+        
         }
 
         public DbSet<Interesse> Interesses { get; set; }
